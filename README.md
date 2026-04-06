@@ -182,3 +182,5 @@ The architecture is modular and allows extending backend inference with a second
 ## License
 
 MIT (see `LICENSE`).
+
+Made with 💻 by [@Prakhar](https://github.com/prakharbuilds)
