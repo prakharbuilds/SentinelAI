@@ -1,13 +1,4 @@
-Got it — I’ll write these so they feel **professional, clean, and tailored specifically to your AI emotion-detection bot**, not just a copy of Grivn.
-
-You can paste these directly into:
-
-* `terms-of-service.md`
-* `privacy-policy.md`
-
----
-
-# 📜 Terms of Service — SentinelAI
+# Terms of Service — SentinelAI
 
 *Last Updated: April 2026*
 
