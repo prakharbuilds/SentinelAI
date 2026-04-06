@@ -1,138 +1,91 @@
-# Privacy Policy — SentinelAI
+
+# Privacy Policy — SentinelAI Bot
 
 *Last Updated: April 2026*
 
-This Privacy Policy explains how SentinelAI ("the Bot") collects, uses, and handles data.
+This Privacy Policy describes how SentinelAI Bot ("SentinelAI", "the Bot", "we", "our") collects, stores, and uses data during its operation within Discord servers.
 
-By using the Bot, you agree to this policy.
-
----
-
-## 1. Compliance with Discord Policies
-
-SentinelAI follows:
-
-* Discord Developer Terms
-* Discord Developer Policy
-
-Data collection is limited strictly to what is required for functionality.
+By using SentinelAI, you consent to the practices outlined below.
 
 ---
 
-## 2. Data We Process
+## 1. Compliance with Discord Policy
 
-SentinelAI processes the following data:
-
-### Message Content
-
-* Messages sent in servers where the Bot is present
-* Used temporarily for emotion analysis
-
-### Metadata
-
-* User IDs
-* Server IDs
-* Channel IDs
-* Timestamps
-
-### Derived Data
-
-* Emotion classification results (e.g., anger, sadness)
-* Confidence scores
-* Temporary emotion history (for moderation logic)
+SentinelAI complies with [Discord’s Developer Terms of Service](https://discord.com/developers/docs/policies-and-agreements/terms-of-service) and [Discord’s Developer Policy](https://discord.com/developers/docs/policies-and-agreements/developer-policy). Any data collected is limited to what is required for bot functionality and moderation purposes.
 
 ---
 
-## 3. What We Do NOT Collect
+## 2. Data We Collect
 
-We do NOT collect:
+SentinelAI collects only the minimum necessary data to provide its features. This may include:
+
+* Discord User IDs
+* Server and Channel IDs
+* Message content (processed for emotion analysis)
+* Emotion classification results (e.g., anger, sadness, etc.)
+* Timestamps related to message events
+
+We **do not collect**:
 
 * Direct Messages (DMs)
 * Email addresses
-* Passwords
 * IP addresses
-* Personal identity beyond Discord-provided IDs
+* Personal identifiers beyond those provided by Discord
 
 ---
 
-## 4. How Data is Used
+## 3. How Data is Used
 
-Data is used only for:
+Collected data is used solely for:
 
 * Real-time emotion detection
-* Moderation actions (warnings, support messages)
-* Logging moderation events
-* Improving system behavior (locally, not sold/shared)
+* Triggering moderation or supportive responses
+* Logging moderation-related events
+* Maintaining short-term context (e.g., repeated emotion detection)
 
-We do NOT:
-
-* Sell data
-* Use data for advertising
-* Profile users outside Discord
+We do **not** use data for advertising, analytics, or third-party profiling.
 
 ---
 
-## 5. Data Storage
+## 4. Data Retention
 
-* Most data is processed **in real-time and not permanently stored**
-* Temporary in-memory storage may be used for:
-
-  * Rate limiting
-  * Emotion history tracking
-
-If persistent storage is added in future:
-
-* It will be minimal and clearly disclosed
+* Most message data is processed in real-time and not permanently stored.
+* Temporary data (such as recent emotion events) may be stored in memory for moderation logic.
+* No data is retained longer than necessary for the Bot’s operation.
+* Upon removal of the Bot from a server, all associated processing stops and stored data becomes inaccessible.
 
 ---
 
-## 6. Data Sharing
+## 5. Data Sharing
 
-We do NOT share user data with third parties.
-
-Data is only accessible to:
-
-* Bot owner(s)
-* Developers (for maintenance/debugging only)
+We **do not** share or sell data to any third parties. Only the bot owner(s) and trusted developers have access to logs or temporary storage for maintenance and improvement purposes.
 
 ---
 
-## 7. User & Server Rights
+## 6. Your Rights
 
-### Server Owners
+If you're a server administrator:
 
-* Can remove the Bot at any time
-* This stops all data processing immediately
+* You may stop all data processing at any time by removing the Bot from your server.
 
-### Users
+If you're a user:
 
-* Can request data deletion (if stored in future versions)
-
----
-
-## 8. Security
-
-We use reasonable safeguards to protect data.
-
-However:
-
-* No system is completely secure
-* Use of the Bot is at your own risk
+* You may request clarification about how your data is processed via the support channels.
 
 ---
 
-## 9. Changes to this Policy
+## 7. Security
 
-We may update this Privacy Policy.
-
-Continued use of the Bot after updates implies acceptance.
+SentinelAI uses standard hosting environments and reasonable measures to protect data from unauthorized access. However, no system is completely secure. Use of the Bot is at your own risk.
 
 ---
 
-## 10. Contact
+## 8. Changes to This Policy
 
-For privacy-related requests:
+We may update this Privacy Policy at any time. Significant changes will be communicated via the repository or support server. Continued use of SentinelAI after updates implies acceptance.
 
-* Use GitHub Issues
-* Or your support server (add later)
+---
 
+## 9. Contact
+
+If you have questions about this policy or would like to request data-related information, please contact us via the GitHub repository or support server (link to be provided).
