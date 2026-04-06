@@ -1,62 +1,39 @@
-# SentinalAI
+# SentinalAI — AI-Powered Discord Moderation Bot
 
-A production-ready AI-powered Discord moderation bot that uses a Flask emotion detection API to classify message sentiment/emotions in real time and trigger moderation or supportive responses.
+SentinalAI is a production-ready Discord moderation bot that uses real-time emotion detection to intelligently respond to user messages. It combines a Flask-based AI backend with a Discord.js bot to deliver smart moderation and support actions.
 
-## Project Overview
+---
 
-SentinalAI combines:
-- A **Python Flask backend** serving Hugging Face emotion inference.
-- A **Discord.js v14 bot** that listens to messages and makes moderation decisions.
-- A **REST integration layer** between bot and backend for clean service boundaries.
+## 🌟 Features
 
-The emotion model used is:
-- `j-hartmann/emotion-english-distilroberta-base`
+- 🤖 Real-time emotion detection via REST API (`/analyze`)
+- 🧠 Detects: anger, sadness, joy, fear, disgust, neutral, surprise
+- ⚖️ Smart moderation system:
+  - Anger → warning system
+  - Sadness → supportive responses
+  - Disgust → toxicity-based caution
+  - Fear → reassurance messages
+  - Joy → logged (no spam replies)
+- ⏱ Per-user rate limiting to prevent spam
+- 📊 Emotion history tracking (in-memory)
+- 🔁 Repeated anger detection (3 triggers → stronger warning)
+- 🛠 Moderator logging (console + optional Discord channel)
+- 📌 `!emotionstats` command for user emotion insights
+- 🧩 Modular architecture for clean scaling
 
-Supported emotions:
-- anger, sadness, joy, fear, disgust, neutral, surprise
+---
 
-## Features
+## 🧱 Tech Stack
 
-### Core Features
-- Real-time message analysis via `POST /analyze`.
-- Predicts:
-  - `top_emotion`
-  - `confidence`
-  - `all_emotions` score map
-- Input preprocessing:
-  - lowercase
-  - remove links
-  - remove mentions
-  - remove emojis
+- **Backend**: Python, Flask, Transformers, Torch  
+- **AI Model**: `j-hartmann/emotion-english-distilroberta-base`  
+- **Bot**: Node.js, discord.js v14  
+- **Communication**: REST API (Axios)  
+- **Config**: `.env` based  
 
-### Moderation Logic
-- **Anger**: confidence > 0.8 → warns user
-- **Sadness**: confidence > 0.7 → supportive message
-- **Disgust** (toxicity proxy): confidence > 0.75 → caution user
-- **Fear**: confidence > 0.75 → reassurance/support
-- **Joy**: logged for moderators (no spam reply)
-- **Neutral**: ignored
+---
 
-### Advanced / Resume-Grade Features
-- Per-user **rate limiting** to prevent reply spam.
-- In-memory **emotion history tracking** per user.
-- **Repeated anger detection**: 3 anger events in 10 minutes triggers stronger warning.
-- Moderator logging:
-  - Console log (always)
-  - Optional Discord moderation channel logging
-- Thresholds and runtime behavior managed by environment config.
-- `!emotionstats` command to show recent emotion events for a user.
-- Modular files (`apiClient`, `emotionHandler`, `config`) for maintainability.
-
-## Tech Stack
-
-- **Backend API**: Python, Flask, Transformers, Torch
-- **AI/NLP**: Hugging Face model pipeline
-- **Bot Runtime**: Node.js, discord.js v14
-- **Communication**: REST (`axios` → Flask)
-- **Configuration**: `.env` + `.env.example`
-
-## Project Structure
+## 📁 Project Structure
 
 ```text
 backend/
@@ -73,43 +50,52 @@ bot/
 
 .env.example
 README.md
-```
+````
 
-## Setup Instructions (Step-by-Step)
+---
 
-## 1) Clone and enter project
+## 📦 Installation
 
 ```bash
 git clone <your-repo-url>
 cd SentinalAI
 ```
 
-## 2) Configure environment variables
+Create your environment file:
 
 ```bash
 cp .env.example .env
 ```
 
-Edit `.env` with your Discord credentials and preferred thresholds.
+Add your Discord credentials and config values.
 
-## 3) Start backend API
+---
+
+## ▶️ Run the Backend
 
 ```bash
 cd backend
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 python main.py
 ```
 
-API default URL: `http://127.0.0.1:5000`
+Default API:
 
-Optional check:
+```
+http://127.0.0.1:5000
+```
+
+Optional health check:
+
 ```bash
 curl http://127.0.0.1:5000/health
 ```
 
-## 4) Start Discord bot
+---
+
+## ▶️ Run the Bot
 
 Open a new terminal:
 
@@ -119,19 +105,27 @@ npm install
 npm run start
 ```
 
-If configured correctly, bot will show:
-- `✅ Logged in as <bot-name>`
+If successful:
 
-## 5) Test in Discord
+```
+✅ Logged in as <bot-name>
+```
 
-Send messages with different emotional tones and observe moderation behavior.
+---
 
-Try command:
+## 🧪 Usage
+
+Send messages in your Discord server and observe how the bot reacts based on emotional tone.
+
+Check stats:
+
 ```text
 !emotionstats
 ```
 
-## Example API Usage
+---
+
+## 🔌 API Example
 
 ### Request
 
@@ -159,28 +153,32 @@ curl -X POST http://127.0.0.1:5000/analyze \
 }
 ```
 
-## Production Notes
+---
 
-- Run Flask behind a production WSGI server (Gunicorn/Uvicorn workers) and reverse proxy.
-- Add persistent storage (Redis/Postgres) for long-term user emotion analytics.
-- Restrict bot intents and permissions to least privilege.
-- Add centralized logging (e.g., CloudWatch, ELK, Datadog).
-- Add retries/circuit breakers for API calls.
+## 🚀 Production Notes
 
-## Optional Toxicity Model Support
+* Deploy Flask using Gunicorn/Uvicorn behind a reverse proxy
+* Add persistent storage (Redis/Postgres) for long-term tracking
+* Use least-privilege Discord bot permissions
+* Integrate centralized logging (ELK, Datadog, etc.)
+* Add retry + failover handling for API calls
 
-The architecture is modular and allows extending backend inference with a second classifier (e.g., toxicity model) and returning merged decisions to the bot.
+---
 
-## Future Improvements
+## 🔮 Future Improvements
 
-- Slash command version of `!emotionstats`.
-- Per-server configurable moderation policies.
-- Dashboard for moderators with trend charts.
-- Alert escalation workflows (mod ping, temporary mute integration).
-- Caching and batching optimizations for higher throughput.
+* Slash command version of `!emotionstats`
+* Per-server moderation customization
+* Moderator dashboard with analytics
+* Alert escalation system (auto-mute, mod ping)
+* Performance optimizations (caching, batching)
 
-## License
+---
 
-MIT (see `LICENSE`).
+## 📄 License
+
+MIT License (see `LICENSE`)
+
+---
 
 Made with 💻 by [@Prakhar](https://github.com/prakharbuilds)
