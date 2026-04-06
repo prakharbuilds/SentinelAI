@@ -1,8 +1,8 @@
-# Terms of Service — SentinelAI
+# Terms of Service — SentinelAI Bot
 
 *Last Updated: April 2026*
 
-By inviting or using SentinelAI ("SentinelAI", "the Bot", "we", "our") in any Discord server, you ("the User", "Server Owner", or "Administrator") agree to be bound by these Terms of Service.
+By inviting or using SentinelAI Bot ("SentinelAI", "the Bot", "we", "our") in any Discord server, you ("the User", "Server Owner", or "Administrator") agree to be bound by these Terms of Service.
 
 If you do not agree with any part of these terms, do not use or interact with the Bot.
 
@@ -10,111 +10,58 @@ If you do not agree with any part of these terms, do not use or interact with th
 
 ## 1. Compliance with Discord Terms
 
-Use of SentinelAI must comply with:
-
-* [https://discord.com/terms](https://discord.com/terms)
-* [https://discord.com/guidelines](https://discord.com/guidelines)
-
-Any violations while using the Bot may result in removal from your server and/or reporting to Discord Trust & Safety.
+Use of SentinelAI must comply with [Discord’s Terms of Service](https://discord.com/terms) and [Community Guidelines](https://discord.com/guidelines). Any violations of these terms while using SentinelAI may result in removal of the Bot from your server and/or reporting to Discord Trust & Safety.
 
 ---
 
-## 2. Nature of the Service
+## 2. Usage Rights
 
-SentinelAI is an AI-powered moderation assistant that analyzes message content to detect emotional tone (e.g., anger, sadness, fear, etc.) and respond accordingly.
+SentinelAI is provided under an open-source license for general public use, but remains under the ownership and control of its developers. You are permitted to use the Bot in your server, subject to the following:
 
-Important:
-
-* The Bot provides **automated, probabilistic analysis**, not human judgment.
-* Outputs may not always be accurate.
-* The Bot should be used as a **support tool**, not a sole moderation authority.
-
----
-
-## 3. Usage Rules
-
-By using SentinelAI, you agree to:
-
-* Use the Bot responsibly and ethically
-* Not use the Bot for harassment, abuse, or targeting individuals
-* Not attempt to manipulate or exploit the AI system
-* Not use the Bot for illegal activities
-
-You must NOT:
-
-* Reverse-engineer or replicate the Bot’s core system
-* Abuse API endpoints or spam requests
-* Use the Bot to bypass Discord moderation systems
+* Do not use the Bot for spam, harassment, abuse, or illegal activity.
+* Do not attempt to exploit, manipulate, or misuse the AI-based features.
+* Do not reverse-engineer, clone, or rebrand the Bot as your own.
+* Do not use the Bot in a way that violates Discord’s policies or disrupts other users.
 
 ---
 
-## 4. AI Limitations Disclaimer
+## 3. Nature of the Service
 
-SentinelAI relies on machine learning models for emotion detection.
-
-We do NOT guarantee:
-
-* 100% accuracy of emotion classification
-* Correct interpretation of sarcasm, slang, or context
-* Appropriate responses in all situations
+SentinelAI is an AI-powered moderation assistant that analyzes message content to detect emotional tone (such as anger, sadness, fear, etc.) and provide automated responses or alerts.
 
 You acknowledge that:
 
-> AI decisions are approximate and may occasionally be incorrect.
+* The Bot uses machine learning models and probabilistic outputs.
+* Responses may not always be accurate or contextually perfect.
+* The Bot is intended to assist moderation, not replace human judgment.
 
 ---
 
-## 5. Disclaimer of Warranty
+## 4. Disclaimer of Warranty
 
-SentinelAI is provided “as is” and “as available” without warranties of any kind.
+SentinelAI is provided “as is,” without warranty of any kind, expressed or implied. We make no guarantees regarding uptime, availability, accuracy of emotion detection, or reliability of responses.
 
-We do not guarantee:
-
-* Uptime or availability
-* Accuracy of results
-* Response time or reliability
-
-We are not liable for:
-
-* Moderation decisions taken based on the Bot
-* Misclassification of user messages
-* Any damages arising from use of the Bot
+The developers are not liable for any damages, losses, or moderation decisions resulting from the use of the Bot.
 
 ---
 
-## 6. Termination of Service
+## 5. Termination of Service
 
-We reserve the right to:
+We reserve the right to block SentinelAI from any server at our discretion, with or without prior notice, for reasons including but not limited to:
 
-* Remove the Bot from any server
-* Block users or servers
-* Restrict access
-
-This may occur without prior notice for:
-
-* Abuse or misuse
-* Violation of these Terms
-* Discord policy violations
+* Abuse or misuse of the Bot
+* Exploitation of AI or system vulnerabilities
+* Breach of these Terms
+* Violations of Discord’s policies
 
 ---
 
-## 7. Modifications to the Service
+## 6. Modifications to the Terms
 
-We may:
-
-* Update features
-* Modify behavior
-* Change AI models
-
-At any time without notice.
-
-Continued use implies acceptance of these changes.
+These Terms may be updated at any time. Continued use of SentinelAI after changes are published constitutes acceptance of the updated Terms. Significant updates will be noted in the support server or repository.
 
 ---
 
-## 8. Contact & Support
+## 7. Contact and Support
 
-For support, questions, or reports:
-
-* Use the official GitHub repository
-* Or your support server (add link later)
+For questions, bug reports, feature requests, or data inquiries, contact us via the official GitHub repository or support server (link to be provided).
