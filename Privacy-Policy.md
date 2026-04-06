@@ -125,7 +125,7 @@ However:
 
 We may update this Privacy Policy.
 
-Continued use of the Bot after updates = acceptance of changes.
+Continued use of the Bot after updates implies acceptance.
 
 ---
 
