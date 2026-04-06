@@ -1,4 +1,4 @@
-# 🔐 Privacy Policy — SentinelAI
+# Privacy Policy — SentinelAI
 
 *Last Updated: April 2026*
 
