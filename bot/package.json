@@ -1,0 +1,16 @@
+{
+  "name": "sentinalai-discord-bot",
+  "version": "1.0.0",
+  "description": "AI-powered Discord moderation bot with real-time emotion detection.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "lint": "node --check index.js && node --check config.js && node --check utils/apiClient.js && node --check utils/emotionHandler.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5"
+  }
+}
