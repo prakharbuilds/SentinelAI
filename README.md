@@ -179,6 +179,14 @@ curl -X POST http://127.0.0.1:5000/analyze \
 
 This project is licensed under the **MIT License**.
 
+
+---
+## 📌 Links
+
+* **Support Server**: [SentinelAI.dev](https://discord.gg/hBmFpJJrSH)
+* **Terms of Service**: [Terms of Service](https://github.com/prakharbuilds/SentinelAI/blob/main/Terms-of-Service.md)
+* **Privacy Policy**: [Privacy Policy](https://github.com/prakharbuilds/SentinelAI/blob/main/Privacy-Policy.md)
+
 ---
 
 Made with 💻 by [@Prakhar](https://github.com/prakharbuilds)
